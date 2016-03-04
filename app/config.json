@@ -1,0 +1,6 @@
+
+{
+
+  "connection" : "mongodb://raju:raju@ds031691.mlab.com:31691/application",
+  "cookie_secret" : "session secret"
+}

@@ -1,0 +1,29 @@
+<div class="container" >
+    <h2>Create a account </h2>
+    <form class="form-horizontal" ng-controller="createAccountCtrl">
+        <div class="form-group has-success">
+            <label class="col-xs-2 control-label" for="inputSuccess">Username</label>
+            <div class="col-xs-6">
+                <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success" ng-model="user.firstname">
+                <span class="help-block">Username is available</span>
+            </div>
+        </div>
+        <div class="form-group has-warning">
+            <label class="col-xs-2 control-label" for="inputWarning">Password</label>
+            <div class="col-xs-6">
+                <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning" ng-model="user.pwdname">
+                <span class="help-block">Password strength: Weak</span>
+            </div>
+        </div>
+        <div class="form-group has-error">
+            <label class="col-xs-2 control-label" for="inputError">Email</label>
+            <div class="col-xs-6">
+                <input type="email" id="inputError" class="form-control" placeholder="Input with error" ng-model="user.email">
+                <span class="help-block">Please enter a valid email address</span>
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <input type="submit" class=" btn " value="submit" ng-click="submit()">
+        </div>
+    </form>
+</div>
